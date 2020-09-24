@@ -16,6 +16,7 @@ export default function PrankHead({ title }) {
       <meta name="twitter:description" content="See the latest news from the Chicag0 Tribune." />
       <meta name="twitter:creator" content="@cassidoo" />
       <meta name="twitter:image" content="https://chicag0tribune.netlify.app/icon.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     </Head>
   )
 }
