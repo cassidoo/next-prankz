@@ -1,20 +1,37 @@
-import Head from 'next/head'
+import { useState } from 'react'
+import Link from 'next/link'
+import PrankHead from '@components/PrankHead'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
+  let [title, setTitle] = useState('')
+
   return (
     <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PrankHead title="Chicag0 Tribune News" />
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Header title="Let's prank people!" />
+        <div className="description">
+          Type in the prank article you'd like to share with folks: <br />
+          <input
+            type="text"
+            placeholder="Cassidy saves entire school"
+            value={title}
+            onChange={(e) => {
+              setTitle(e.target.value)
+            }}
+          />
+          {title.length > 0 && (
+            <div>
+              Send this URL to your friends! <br />
+              <Link href={`/news/${title.toLowerCase().split(' ').join('-')}`}>
+                <a>chicag0tribune.netlify.app/news/{title.toLowerCase().split(' ').join('-')}</a>
+              </Link>
+            </div>
+          )}
+        </div>
       </main>
 
       <Footer />
@@ -37,11 +54,9 @@ export default function Home() {
           align-items: center;
         }
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+        input {
+          margin: 10px 0;
+          width: 100%;
         }
       `}</style>
 
