@@ -4,9 +4,7 @@
 
 This is a project for setting up news pranks to trick your friends. [Check out the demo!](https://chicag0tribune.netlify.app/)
 
-This is a [Next.js](https://nextjs.org/) v9.5.0 project set up to be instantly deployed to [Netlify](https://url.netlify.com/Bk4UicocL)!
-
-This project is a very minimal starter that includes 2 sample components, a sample API endpoint, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases.
+This is a [Next.js](https://nextjs.org/) v9.5.0 project set up to be instantly deployed to [Netlify](https://url.netlify.com/Bk4UicocL), using [next-on-netlify](https://github.com/netlify/next-on-netlify)!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-prankz&utm_source=github&utm_medium=nextprankz-cs&utm_campaign=devex)
 
