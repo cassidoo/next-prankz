@@ -9,8 +9,6 @@ export function getStaticPaths() {
 export async function getStaticProps({ params }) {
   let title = toTitleCase(params.article.split('-').join(' '))
 
-  console.log(params.article.split('-').join(' '))
-
   return {
     props: { title },
     revalidate: false,
