@@ -1,10 +1,10 @@
-# Next Prank Site
+# Next.js Prank Site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b236bd20-d636-45b1-a6f2-5a96b4228ac4/deploy-status)](https://app.netlify.com/sites/chicag0tribune/deploys)
 
 This is a project for setting up news pranks to trick your friends. [Check out the demo!](https://chicag0tribune.netlify.app/)
 
-This is a [Next.js](https://nextjs.org/) v9.5.0 project set up to be instantly deployed to [Netlify](https://url.netlify.com/Bk4UicocL), using [next-on-netlify](https://github.com/netlify/next-on-netlify)!
+This is a [Next.js](https://nextjs.org/) v10+ project set up to be instantly deployed to [Netlify](https://url.netlify.com/Bk4UicocL), using [a Next.js build plugin](https://github.com/netlify/netlify-plugin-nextjs) to server-side render routes with Netlify Functions!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-prankz&utm_source=github&utm_medium=nextprankz-cs&utm_campaign=devex)
 
